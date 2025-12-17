@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <h3>Add User</h3>
+    <form method="post">
+        <input name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button>Add User</button>
+    </form>
+
+    <h3>Attendance Records</h3>
+    <table>
+        <tr><th>User</th><th>Date</th><th>Status</th></tr>
+        {% for r in records %}
+        <tr>
+            <td>{{ r.username }}</td>
+            <td>{{ r.date }}</td>
+            <td>{{ r.status }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>

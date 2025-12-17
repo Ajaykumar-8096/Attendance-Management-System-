@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #f4f6f9;
+    padding: 40px;
+}
+
+/* Card layout */
+.container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 25px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Forms */
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0a0a0a;
+    color: rgb(210, 230, 233);
+}
+
+/* Logout link */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #d83795;
+}
+
+a:hover {
+    text-decoration: underline;
+}
